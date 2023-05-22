@@ -1,0 +1,15 @@
+.NoPage-h {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 4em;
+  padding: 0;
+  margin: 100px;
+}
+
+.NoPage-p {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  padding: 0;
+  margin: auto 100px;
+}

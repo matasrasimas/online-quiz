@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Sono:wght@300&display=swap");
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  margin: auto;
+}
+
+.hdr-txt {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.w-p-20 {
+  width: var(--width-percent-20);
+}
+
+.w-p-40 {
+  width: var(--width-percent-40);
+}
+
+.w-p-50 {
+  width: var(--width-percent-50);
+}
+
+.w-p-60 {
+  width: var(--width-percent-60);
+}
+
+.w-p-80 {
+  width: var(--width-percent-80);
+}
+
+.w-p-100 {
+  width: var(--width-percent-100);
+}
+
+.txt-input {
+  border: 1px solid #474747;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #333;
+}
+
+.txt-input:focus {
+  border: 2px solid blue;
+  border-color: blue;
+  box-shadow: 0px 0px 5px 0px blue;
+  outline: none;
+  /* Add an outline of none to remove the default outline when an input is focused */
+}
+
+.label_text {
+  font-family: "Sono", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.label_text.answer_text {
+  align-self: center;
+}
+
+.algn-cntr {
+  align-items: center;
+}
+
+.algn-flx-strt {
+  align-items: flex-start;
+}
+
+.algn-flx-end {
+  align-items: flex-end;
+}
+
+.form_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.error-msg {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+.error-msg-hdr {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  align-self: center;
+  font-size: 2em;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.rm-btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.add-btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.answer-container {
+  display: flex;
+  margin-top: 0;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+/* Hide default checkbox */
+.chckbx-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  align-self: center;
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #d1d1d1;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Checked state */
+.chckbx-input:checked::before {
+  content: "✔";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: #fff;
+}
+
+.chckbx-input:checked {
+  background-color: #6fa9d6;
+  border-color: #6fa9d6;
+}
+
+/* Hover state */
+.chckbx-input:hover:not(:checked) {
+  border-color: #a1a1a1;
+}
+
+.create-quiz-btn {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  box-shadow: 2px 2px 2px grey;
+  padding: 5px;
+  -webkit-text-stroke: 1px black;
+  font-weight: 500;
+  background-color: #1b0073;
+  margin: 50px;
+  align-self: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 60px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+}
+
+.create-quiz-btn:hover {
+  transform: scale(1.2);
+}
+
+.password-input {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.shw-psswd-icon {
+  transform: translateY(-15%);
+  position: absolute;
+  right: 28%;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.register-link {
+  color: #0077b6;
+  text-decoration: none;
+  margin-left: 10px;
+  -webkit-text-stroke: 1px black;
+  cursor: pointer;
+}
+
+.register-link[dark-mode] {
+  color: #90e0ef;
+}

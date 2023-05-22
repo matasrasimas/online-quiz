@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit, serif;
+}
+
+:root {
+  --hue-neutral: 172;
+  --hue-wrong: -2;
+  --hue-correct: 136;
+}
+
+.question_body {
+  position: fixed;
+  overflow: hidden;
+
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #72f1fa; */
+  /* position: fixed;
+  
+ 
+  width: 80%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+  zoom: 0.5; */
+}
+
+.question-page_container > * {
+  flex-shrink: 0;
+}
+
+.question-page_container button {
+  margin-top: auto;
+}
+/* 
+.question-page_container {
+  max-width: 80%;
+  max-height: 100%;
+} */
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 50px;
+  margin: 5% 0;
+}
+
+.question_btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.question_btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 70%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+
+  appearance: none;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  /* color: #1a1a1a; */
+  cursor: pointer;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  min-height: 100px;
+  min-width: 500px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%; */
+  will-change: transform;
+}
+
+.question_btn:hover {
+  border-color: white;
+  background-color: hsl(var(--hue), 100%, 50%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.question_btn.correct {
+  --hue: var(--hue-correct);
+}
+
+.question_btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.question_btn:disabled {
+  pointer-events: none;
+}
+
+.next_button,
+.start_button {
+  font-size: 1, 5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+#question {
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 10px;
+
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.focus {
+  border-color: rgb(0, 180, 216);
+  background-color: hsl(var(--hue), 100%, 70%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#question_timer {
+  display: block;
+  position: absolute;
+  align-items: center;
+  align-content: center;
+  margin-top: -30%;
+}
+
+.timer {
+  position: absolute;
+  display: none;
+  font-size: 2.5em;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  align-self: flex-start;
+  top: 40px;
+  right: 100px;
+}
+
+.timer[data-visible] {
+  display: block;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+.quiz_score {
+  position: absolute;
+  font-weight: bold;
+  align-self: flex-start;
+  top: 60px;
+  left: 100px;
+  font-size: 20px;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#question_counter1 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* margin: 60px; */
+}
+
+
+#timer-progress-bar {
+  width: 70%;
+  height: 30px;
+  background-color: #333333;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#timer-progress {
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  border-radius: 10px;
+  transform: scaleX(-1); /* This line flips the progress bar */
+}
+
+#timer-progress::-webkit-progress-value {
+  background-color: #c71a0d;
+}
+#timer-progress::-webkit-progress-bar {
+  background-color: #1bcf36;
+}

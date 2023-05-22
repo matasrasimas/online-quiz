@@ -1,0 +1,81 @@
+/* h1 {
+  padding-bottom: 100px;
+  padding-top: 70px;
+  font-family: Georgia, serif;
+  text-align: center;
+} */
+
+/* Changes background color of one paragraph along with the picture */
+.about_page-container {
+  overflow: hidden;
+  margin: 5em 14em 8em 14em;
+
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 12px)
+      calc(100% - 12px) no-repeat,
+    radial-gradient(circle, transparent 40%, #90e0ef 100%) 70% 50%;
+  border-radius: 5px;
+  padding: 22px;
+  box-sizing: border-box;
+}
+
+/* Styling for the paragraph: position, font, font size */
+.about_page-para1 {
+  display: block;
+  width: 35em;
+  margin-top: 4.7em;
+  margin-bottom: 2em;
+  padding-left: 50px;
+  padding-right: 30px;
+  font-family: Verdana, sans-serif;
+  float: left;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* Styling for an image: size, position */
+.image1-right {
+  display: block;
+  width: 500px;
+  height: 340px;
+  margin: 2em 2em 2em;
+  float: right;
+  /* border-top-right-radius: 40%; */
+  opacity: 80%;
+}
+
+.about_page-para2 {
+  display: block;
+  width: 35em;
+  margin-top: 3.5em;
+  padding-left: 100px;
+  padding-right: 30px;
+  font-family: Verdana, sans-serif;
+  float: right;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.image2-left {
+  display: block;
+  width: 500px;
+  height: 340px;
+  margin: 2em 2em 2em;
+  float: left;
+  /* border-top-right-radius: 40%; */
+  opacity: 80%;
+}
+
+.quote {
+  text-align: center;
+  padding-top: 200px;
+  font-size: large;
+}
+
+.quote-bubble {
+  display: block;
+  float: left;
+  width: 250px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 100px 0px 0px;
+}
